@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    
+     <h1>🎰 BLACKJACK 🎰</h1>
+    
+    <div class="game-container">
+        <!-- Dealer Section -->
+        <div class="dealer-section">
+            <h2> DEALER</h2>
+            <div id="dealer-cards"></div>
+        </div>
+
+        <!-- Bet Section -->
+        <div class="bet-section">
+            <label for="bet-input"> Place Your Bet:</label>
+            <input type="number" id="bet-input" min="10" max="200" value="20" step="10">
+        </div>
+
+        <!-- Player Section -->
+        <div class="player-section">
+            <h2> YOUR HAND</h2>
+            <p id="message-el">Want to play a round?</p>
+            <div id="cards-el">Cards</div>
+            <p id="sum-el">Sum:</p>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons-container">
+            <button onclick="startGame()"> START GAME</button>
+            <button onclick="newCard()" id="hit-btn"> HIT</button>
+            <button onclick="stand()" id="stand-btn"> STAND</button>
+        </div>
+
+        <!-- Result Message -->
+        <div id="result-el"></div>
+
+        <!-- Player Info -->
+        <p id="player-el">Per: $145</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
